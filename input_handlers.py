@@ -371,7 +371,7 @@ class MainGameEventHandler(EventHandler):
 
 class GameOverEventHandler(EventHandler):
     def ev_keydown(self, event: tcod.event.KeyDown) -> None:
-        if event.sym == tcod.event.K_ESCAPE:
+        if event.sym == tcod.event.KeySym.ESCAPE:
             raise SystemExit()
 CURSOR_Y_KEYS = {
     tcod.event.KeySym.UP: -1,
